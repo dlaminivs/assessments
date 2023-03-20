@@ -1,0 +1,17 @@
+C:\source\assessments\ChuckNorris\ChuckNorris.Service\bin\Debug\net6.0\ChuckNorris.Service.deps.json
+C:\source\assessments\ChuckNorris\ChuckNorris.Service\bin\Debug\net6.0\ChuckNorris.Service.dll
+C:\source\assessments\ChuckNorris\ChuckNorris.Service\bin\Debug\net6.0\ChuckNorris.Service.pdb
+C:\source\assessments\ChuckNorris\ChuckNorris.Service\bin\Debug\net6.0\ChuckNorris.Data.dll
+C:\source\assessments\ChuckNorris\ChuckNorris.Service\bin\Debug\net6.0\ChuckNorris.Models.dll
+C:\source\assessments\ChuckNorris\ChuckNorris.Service\bin\Debug\net6.0\ChuckNorris.Data.pdb
+C:\source\assessments\ChuckNorris\ChuckNorris.Service\bin\Debug\net6.0\ChuckNorris.Models.pdb
+C:\source\assessments\ChuckNorris\ChuckNorris.Service\obj\Debug\net6.0\ChuckNorris.Service.csproj.AssemblyReference.cache
+C:\source\assessments\ChuckNorris\ChuckNorris.Service\obj\Debug\net6.0\ChuckNorris.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\source\assessments\ChuckNorris\ChuckNorris.Service\obj\Debug\net6.0\ChuckNorris.Service.AssemblyInfoInputs.cache
+C:\source\assessments\ChuckNorris\ChuckNorris.Service\obj\Debug\net6.0\ChuckNorris.Service.AssemblyInfo.cs
+C:\source\assessments\ChuckNorris\ChuckNorris.Service\obj\Debug\net6.0\ChuckNorris.Service.csproj.CoreCompileInputs.cache
+C:\source\assessments\ChuckNorris\ChuckNorris.Service\obj\Debug\net6.0\ChuckNorris.Service.csproj.CopyComplete
+C:\source\assessments\ChuckNorris\ChuckNorris.Service\obj\Debug\net6.0\ChuckNorris.Service.dll
+C:\source\assessments\ChuckNorris\ChuckNorris.Service\obj\Debug\net6.0\refint\ChuckNorris.Service.dll
+C:\source\assessments\ChuckNorris\ChuckNorris.Service\obj\Debug\net6.0\ChuckNorris.Service.pdb
+C:\source\assessments\ChuckNorris\ChuckNorris.Service\obj\Debug\net6.0\ref\ChuckNorris.Service.dll

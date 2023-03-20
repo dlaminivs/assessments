@@ -1,0 +1,66 @@
+﻿@model JokeViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<section class="py-5 text-center container">
+    <div class="row py-lg-2">
+      @if(Model.Joke != null)
+      {
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <img src="~/img/chucknorris_logo_coloured_small.png" width="100" height="100" />
+
+                    <p class="lead text-muted">@Model.Joke.Value</p>
+            
+                @if (Model.IsFavourite)
+                {
+                    <button class="btn btn-outline-danger" onclick="location.href='@Html.Raw(Url.Action("RemoveFavourite", "Home",new {jokeId = Model?.Joke?.Id,favid = Model?.Joke?.Id}))'"> <i class="fas fa-heart favcolour"></i> </button>
+                }
+                else{
+                    <button class="btn btn-outline-danger" onclick="location.href='@Html.Raw(Url.Action("SaveFavourite", "Home",new {jokeId = Model.Joke.Id}))'"><i class="far fa-heart"></i></button>
+                }
+                <p>
+                    <a href="#" class="btn btn-secondary my-2" onclick="location.href='@Url.Action("Index", "Home")'">Next Joke</a>
+                </p>
+            </div>
+      }
+    </div>
+    <div>
+        <h5>Favourite Jokes</h5>
+    </div>
+
+
+    @if(Model.FavouriteJokes != null)
+    { 
+        <div class="row">
+
+            <table class="table table-striped">
+                <tbody>
+
+            @foreach (var item in Model.PaginatedJokes())
+            {
+                <tr>
+                <th scope="row">
+
+                   <button class="btn" onclick="location.href='@Html.Raw(Url.Action("RemoveFavourite", "Home",new {jokeId = Model?.Joke?.Id, favid = item.Id}))'">  <i class="fas fa-trash-alt favcolour"></i> </button>
+                </th>
+                    <td>@item?.Joke?.Value</td>
+                </tr>
+            }
+            </tbody>
+            </table>
+                <ul class="pagination">  
+
+
+        @for (int i = 1; i <= Model?.PageCount(); i++)  
+        {  
+            <li class="@(i == Model.CurrentPage ? "page-item active" : "page-item")">  
+                        <a class="page-link" href="@Url.Action("Index", new { page = i , jokeid = Model?.Joke?.Id})">@i</a>
+            </li>  
+        }  
+    </ul>
+        </div>
+    }
+
+
+</section>
